@@ -14,6 +14,9 @@ def detect_turning_points(signal, filename="turning_points.pdf"):
 
     plt.plot(signal, label='Signal') 
     plt.scatter(turning_points, signal[turning_points], color='red', label='Turning points')
+    plt.title('Turning Points Detection')
+    plt.xlabel('Index')
+    plt.ylabel('Signal Value')    
     plt.legend()
     plt.savefig(filename)
     

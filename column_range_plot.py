@@ -14,6 +14,9 @@ def column_range_plot(A, filename="column_ranges.pdf"):
     col_ranges = np.array(col_ranges)
     
     plt.bar(range(num_cols), col_ranges)
+    plt.title("Column Ranges")
+    plt.xlabel("Column Index")
+    plt.ylabel("Range")
     plt.savefig(filename)
 
     return col_ranges
